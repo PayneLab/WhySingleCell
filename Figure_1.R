@@ -124,6 +124,6 @@ ggplot() +
 
 
 ## Save the plot
-ggsave("Depth Classification Distributions.png", dpi = 600, units = "in", height = 5, width = 7)
+ggsave("Figure_1.png", dpi = 600, units = "in", height = 5, width = 7)
 
 
