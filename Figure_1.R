@@ -8,7 +8,7 @@ library(viridis)
 ### (1) list of TS proteins
 ### (2) list of TE proteins
 ### (3) protein information table from Hannah and Caleb and add TS/TE info
-TS_ids <- read_tsv("ensembl_to_uniprot_TS_NEW.tsv") %>%
+TS_ids <- read_tsv("ensembl_to_uniprot_TS.tsv") %>%
   filter(Reviewed == "reviewed") %>%
   filter(Organism == "Homo sapiens (Human)") %>%
   pull(Entry) %>%
@@ -16,7 +16,7 @@ TS_ids <- read_tsv("ensembl_to_uniprot_TS_NEW.tsv") %>%
   sort() %>%
   unlist()
 
-TE_ids <- read_tsv("ensembl_to_uniprot_TE_NEW.tsv") %>%
+TE_ids <- read_tsv("ensembl_to_uniprot_TE.tsv") %>%
   filter(Reviewed == "reviewed") %>%
   filter(Organism == "Homo sapiens (Human)") %>%
   pull(Entry) %>%
