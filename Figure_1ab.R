@@ -119,11 +119,11 @@ replicate_plot <- ggplot() +
 
 
 ## Save the plots
-agg_png("Figure_2a.png", width = 6, height = 6, units = "in", res = 600, scaling = 1.5)
+agg_png("Figure_1a.png", width = 6, height = 6, units = "in", res = 600, scaling = 1.5)
 trajectory_plot
 dev.off()
 
-agg_png("Figure_2b.png", width = 6, height = 6, units = "in", res = 600, scaling = 1.5)
+agg_png("Figure_1b.png", width = 6, height = 6, units = "in", res = 600, scaling = 1.5)
 replicate_plot
 dev.off()
 
